@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ==========================================
+# Data Science & Computational Chemistry Additions
+# ==========================================
+# Raw and Processed Datasets (Keep folders via .gitkeep, ignore data)
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Structure & Data Files
+*.cif
+*.poscar
+*.vasp
+*.csv
+*.json
+*.h5
+
+# Model Checkpoints & Figures
+models/*
+!models/.gitkeep
+figures/*
+!figures/.gitkeep
+*.pt
+*.pth
+*.pkl
