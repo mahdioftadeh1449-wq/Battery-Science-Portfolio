@@ -1,43 +1,56 @@
-# Autonomous Discovery of NASICON Cathodes via Active Learning & DFT
+# Autonomous Battery Materials Informatics Lab
 
-[![Status](https://img.shields.io/badge/Status-Phase%200%3A%20Setup-blue.svg)]()
-[![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
+![Field](https://img.shields.io/badge/Domain-AI4Science%20%7C%20Computational%20Materials-darkblue)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Frameworks](https://img.shields.io/badge/Frameworks-PyTorch%20%7C%20Pymatgen%20%7C%20BoTorch-darkred)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-An end-to-end framework integrating Density Functional Theory (DFT), Graph Neural Networks (GNNs), and Bayesian Optimization (Active Learning) to accelerate the discovery of high-performance, defect-tolerant NASICON-structured sodium-ion battery cathodes.
-
----
-
-## 🎯 Project Objectives
-1. **Accelerated Screening:** Screen composition and defect spaces in NASICON frameworks ($\text{Na}_x\text{M}_2(\text{PO}_4)_3$) with over $30\text{--}50\%$ reduction in computational cost.
-2. **Defect-Aware Modeling:** Incorporate vacancy and substitution defects into surrogate machine learning models to capture realistic electrochemical responses.
-3. **Closed-Loop Exploration:** Implement multi-objective Bayesian optimization balancing thermodynamic stability, average voltage, and Na-ion diffusion barriers.
+An advanced computational research portfolio dedicated to the closed-loop autonomous discovery, high-throughput Density Functional Theory (DFT) calculations, and defect engineering of next-generation energy storage materials (Sodium-ion and beyond).
 
 ---
 
-## 🔬 Core Methodology & Tech Stack
-- **Quantum Mechanics / DFT:** `VASP`, `pymatgen`, `ase`
-- **Materials Informatics:** `matminer`, `mp-api`
-- **Machine Learning / GNNs:** `PyTorch Geometric`, `M3GNet` / `CGCNN`
-- **Active Learning:** `BoTorch`, `GPyTorch`
+## 🎯 Research Focus & Architecture
+This laboratory repository follows a modular multi-project structure designed for reproducible, publication-grade materials informatics:
+
+### 📁 Active Projects
+
+| Project | Sub-Directory | Description | Status |
+| :--- | :--- | :--- | :--- |
+| **Project 1: NASICON Cathodes** | [`project1_nasicon_defect/`](./project1_nasicon_defect) | Closed-loop discovery, doping, and defect engineering in $\text{Na}_x\text{M}_2(\text{PO}_4)_3$ frameworks using GNNs & Active Learning. | 🟡 Active |
 
 ---
 
-## 📁 Repository Architecture
-```text
-├── data/               # Raw and processed datasets (excluded from Git)
-│   ├── raw/            # Initial downloaded CIF files and MP data
-│   ├── processed/      # ML-ready featurized tensors / CSVs
-│   └── external/       # Reference benchmark literature data
-├── notebooks/          # Step-by-step exploratory analysis
-├── scripts/            # Reproducible data pipelines and workflow tools
-├── docs/               # Technical protocols and meeting notes
-│   ├── protocols/      # Standard Operating Procedures (SOPs)
-│   └── meetings/       # Research progress logs
-├── figures/            # Publication-grade vector and raster figures
-├── models/             # Trained surrogate ML model checkpoints
-├── .gitignore          # Excluded large/sensitive files
-├── environment.yml     # Conda environment specification
-├── PROJECT_LOG.md      # Daily experimental and research activity log
-├── DECISIONS.md        # Architectural and scientific Decision Records (ADRs)
-└── README.md           # Project showcase and entry point
+## 🛠 Core Methodology & Tech Stack
+- **Quantum Mechanics & DFT:** `VASP`, `pymatgen`, `ase`
+- **Materials Informatics:** `mp-api`, `matminer`
+- **Graph Neural Networks (Surrogate Models):** `PyTorch Geometric`, `ALIGNN`, `M3GNet` / `CGCNN`
+- **Active Learning & Optimization:** `BoTorch`, `GPyTorch` (Bayesian Optimization via UCB/EI)
+
+---
+
+## 📂 Multi-Project Repository Structure
+Battery-Science-Portfolio/
+
+├── .env # Local API keys (excluded from VCS)
+
+├── .gitignore # Global ignore rules for raw data and binaries
+
+├── environment.yml # Unified Conda environment specification
+
+├── LICENSE # MIT License
+
+├── README.md # Main portfolio gateway (this file)
+
+└── project1_nasicon_defect/ # Project 1: NASICON Defect Engineering
+
+├── data/ # Project data (raw CIFs and processed graphs)
+
+├── docs/ # Research notes, protocols, and derivations
+
+├── figures/ # Vector plots, phase diagrams, and parity charts
+
+├── models/ # Checkpoints and trained surrogate models
+
+├── scripts/ # End-to-end reproducible Python pipelines
+
+└── README.md # Project-specific technical documentation
