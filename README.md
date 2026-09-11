@@ -54,3 +54,31 @@ Battery-Science-Portfolio/
 ├── scripts/ # End-to-end reproducible Python pipelines
 
 └── README.md # Project-specific technical documentation
+
+### 2. Configure Computational Environment
+Recreate the unified Conda environment containing PyTorch, Pymatgen, and all ML dependencies:
+
+```bash
+conda env create -f environment.yml
+conda activate dft-ml-advanced
+```
+
+### 3. API Key Configuration
+Create a `.env` file in the repository root and provide your Materials Project API key:
+
+```bash
+echo MP_API_KEY=your_materials_project_api_key_here > .env
+```
+
+### 4. Fetch Baseline Structure
+Run the baseline ingestion pipeline to retrieve the pristine $\text{Na}_3\text{V}_2(\text{PO}_4)_3$ crystal structure (`mp-20371`):
+
+```bash
+python project1_nasicon_defect/scripts/fetch_baseline.py
+```
+
+---
+
+## 📜 License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+```
