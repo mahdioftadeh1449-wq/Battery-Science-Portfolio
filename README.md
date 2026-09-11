@@ -81,6 +81,6 @@ python project1_nasicon_defect/scripts/fetch_baseline.py
 
 **Mahdi Oftadeh**  
 * **Research Focus:** Autonomous Materials Discovery, Computational Defect Engineering, Solid-State Battery Cathodes.
-* 
+
 ## 📜 License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
