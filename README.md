@@ -77,7 +77,10 @@ Run the baseline ingestion pipeline to retrieve the pristine $\text{Na}_3\text{V
 python project1_nasicon_defect/scripts/fetch_baseline.py
 ```
 
----
+## 👨‍💻 Principal Investigator
 
+**Mahdi Oftadeh**  
+* **Research Focus:** Autonomous Materials Discovery, Computational Defect Engineering, Solid-State Battery Cathodes.
+* 
 ## 📜 License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
